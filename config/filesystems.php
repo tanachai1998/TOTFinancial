@@ -49,6 +49,11 @@ return [
             // 'root' => storage_path('D:\\xampp\\htdocs\\digital\\app\\public'),
         ],
 
+        'images' => [
+            'driver' => 'local',
+            'root' => public_path('img'),
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),

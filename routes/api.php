@@ -100,11 +100,10 @@ Route::get('removeYear/{id}','yearController@removeYear');
 Route::get('removeImage/{id}','sectorImageController@removeImage');
 Route::get('removeFile/{id}','regulationFileController@removeFile');
 Route::get('removeFiles/{id}','regulationFileController@removeFiles');
+Route::get('removeNews/{id}','newsController@removeNews');
 
 
 // Route::get('removeFile/{id}',[regulationFileController::class,'removeFile']);
-
-
 
 
 
