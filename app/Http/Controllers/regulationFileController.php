@@ -119,6 +119,7 @@ class regulationFileController extends Controller
     }
     public function removeFiles($id){
         $file = file::find($id);
+        File::delete('Files/' . $file->file_name);
         $file->delete();
     }
 
