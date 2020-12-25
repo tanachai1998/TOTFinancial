@@ -30,7 +30,7 @@ Route::post('validUser',  'adminController@queryUser');
 Route::post('checkYear','yearController@checkYear');
 Route::post('checkCategory','categoryRegulationController@checkCategory');
 Route::post('checkRegulation','regulationController@checkRegulation');
-
+Route::post('postemailtoget','adminController@postemailtoget');
 
 
 

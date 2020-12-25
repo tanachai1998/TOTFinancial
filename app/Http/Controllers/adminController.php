@@ -73,10 +73,18 @@ class adminController extends Controller
         return response()->json($adminUser);
     }
 
-    public function gerUserByUid($uid){
+    public function getUserByUid($uid){
         $uid = admin::with('sector')->where('uid',$uid)->first();
 
         return $uid;
+    }
+    public function postemailtoget(Request $request){
+        //return "123";
+        //return $request->email;
+
+        $user = admin::where('email',$request->email)->first();
+        
+        return $user;
     }
 
 }
