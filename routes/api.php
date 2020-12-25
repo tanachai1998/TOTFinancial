@@ -42,6 +42,7 @@ Route::post('addRegulation/','regulationController@addRegulation');
 Route::post('addYear','yearController@addYear');
 Route::post('addNews','newsController@addNews');
 Route::post('uploadFile','regulationFileController@storeFile');
+Route::post('addStructureimg','structurePageController@addStructureimg');
 // Route::post('uploadFile','fileController@storeFile');
 
 
@@ -101,6 +102,7 @@ Route::get('removeImage/{id}','sectorImageController@removeImage');
 Route::get('removeFile/{id}','regulationFileController@removeFile');
 Route::get('removeFiles/{id}','regulationFileController@removeFiles');
 Route::get('removeNews/{id}','newsController@removeNews');
+Route::get('removeStructureImage/{id}','structurePageController@removeStructureImage');
 
 
 // Route::get('removeFile/{id}',[regulationFileController::class,'removeFile']);

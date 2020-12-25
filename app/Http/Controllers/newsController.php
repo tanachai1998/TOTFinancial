@@ -71,6 +71,7 @@ class newsController extends Controller
 
     public function removeNews($id){
         $news = news::find($id);
+        File::delete('img/' . $news->image);
         $news-> delete();
     }
 }
