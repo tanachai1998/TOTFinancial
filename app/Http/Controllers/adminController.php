@@ -82,8 +82,8 @@ class adminController extends Controller
         //return "123";
         //return $request->email;
 
-        $user = admin::where('email',$request->email)->first();
-        
+        $user = admin::with('sector')->where('email',$request->email)->first();
+
         return $user;
     }
 
